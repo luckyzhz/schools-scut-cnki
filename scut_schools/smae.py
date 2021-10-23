@@ -30,7 +30,7 @@ for i in range(len(xisuos)):
         all_teachers.append(teacher.text)
 
 # 把 all_teachers 存储到文件
-filename = 'smae.txt'
+filename = 'smae.json'
 with open(filename, 'w', encoding="utf-8") as f:
     # 设置 ensure_ascii=False，避免中文被保存为 ascii 码
     json.dump(all_teachers, f, ensure_ascii=False)
