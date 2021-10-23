@@ -1,4 +1,4 @@
-# institutes-scut-cnki
+# schools-scut-cnki
 查找知网上华工论文作者属于哪个学院
 
 # 需要的模块
