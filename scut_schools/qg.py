@@ -1,5 +1,5 @@
 #! python3
-# qgkxygc.py - 下载【轻工科学与工程学院】教师名录
+# qg.py - 下载【轻工科学与工程学院】教师名录
 
 import json
 from time import sleep
@@ -28,7 +28,7 @@ for i in range(n):
         names.append(teacher.text.replace(' ', ''))
 
 # 把 names 存储到文件
-filename = 'qgkxygc.json'
+filename = 'qg.json'
 with open(filename, 'w', encoding="utf-8") as f:
     # 设置 ensure_ascii=False，避免中文被保存为 ascii 码
     json.dump(names, f, ensure_ascii=False)

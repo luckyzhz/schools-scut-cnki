@@ -1,5 +1,5 @@
 #! python3
-# cnsba.py - 下载【工商管理学院】教师名录
+# sba.py - 下载【工商管理学院】教师名录
 
 import json
 from time import sleep
@@ -18,7 +18,7 @@ for teacher in teachers:
     names.append(teacher.text.replace(' ', ''))
 
 # 把 names 存储到文件
-filename = 'cnsba.json'
+filename = 'sba.json'
 with open(filename, 'w', encoding="utf-8") as f:
     # 设置 ensure_ascii=False，避免中文被保存为 ascii 码
     json.dump(names, f, ensure_ascii=False)

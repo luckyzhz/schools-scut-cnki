@@ -1,5 +1,5 @@
 #! python3
-# materials.py - 下载【材料科学与工程学院】教师名录
+# smse.py - 下载【材料科学与工程学院】教师名录
 
 import json
 from time import sleep
@@ -24,7 +24,7 @@ for i in range(len(departments)):
         names.append(teacher.text)
 
 # 把 names 存储到文件
-filename = 'materials.json'
+filename = 'smse.json'
 with open(filename, 'w', encoding="utf-8") as f:
     # 设置 ensure_ascii=False，避免中文被保存为 ascii 码
     json.dump(names, f, ensure_ascii=False)
