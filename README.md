@@ -2,7 +2,7 @@
 查找知网上华工论文作者属于哪个学院
 
 # 需要的模块
-`pip install selenium`
+`pip install selenium openpyxl`
 
 # 架构
 包含两部分脚本
